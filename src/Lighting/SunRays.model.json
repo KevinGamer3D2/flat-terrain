@@ -1,0 +1,7 @@
+{
+    "className": "SunRaysEffect",
+    "properties": {
+        "Intensity": { "Float64": 0.01 },
+        "Spread": { "Float64": 0.1 }
+    }
+}

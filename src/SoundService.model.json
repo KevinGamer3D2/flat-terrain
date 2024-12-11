@@ -1,0 +1,7 @@
+{
+    "className": "SoundService",
+    "properties": {
+        "RespectFilteringEnabled": { "Bool": true },
+        "VolumetricAudio": { "Enum": 2 }
+    }
+}

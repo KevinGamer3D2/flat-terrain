@@ -1,0 +1,19 @@
+{
+    "className": "BubbleChatConfiguration",
+    "properties": {
+        "FontFace": {
+            "Font": {
+                "family": "rbxasset://fonts/families/SourceSansPro.json",
+                "weight": "Regular",
+                "style": "Normal"
+            }
+        },
+        "BackgroundTransparency": { "Float64": 0 },
+        "VerticalStudsOffset": { "Float64": 0.5 },
+        "TextColor3": { "Color3": [0, 0, 0] },
+        "BubbleDuration": { "Float64": 10 },
+        "AdorneeName": { "String": "Head" },
+        "BubblesSpacing": { "Float64": 9 },
+        "TextSize": { "Int64": 22 }
+    }
+}

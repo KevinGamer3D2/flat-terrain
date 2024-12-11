@@ -1,0 +1,16 @@
+{
+    "className": "Lighting",
+    "properties": {
+        "OutdoorAmbient": { "Color3uint8": [70, 70, 70] },
+        "EnvironmentSpecularScale": { "Float64": 1 },
+        "ColorShift_Bottom": { "Color3": [0, 0, 0] },
+        "EnvironmentDiffuseScale": { "Float64": 1 },
+        "Ambient": { "Color3uint8": [70, 70, 70] },
+        "ColorShift_Top": { "Color3": [0, 0, 0] },
+        "GlobalShadows": { "Bool": true },
+        "ClockTime": { "Float64": 14.5 },
+        "Brightness": { "Float64": 3 },
+        "LightingStyle": { "Enum": 1 },
+        "Technology": { "Enum": 1 }
+    }
+}

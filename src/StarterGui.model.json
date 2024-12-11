@@ -1,0 +1,8 @@
+{
+    "className": "StarterGui",
+    "properties": {
+        "ShowDevelopmentGui": { "Bool": false },
+        "VirtualCursorMode": { "Enum": 2 },
+        "RtlTextSupport": { "Enum": 2 }
+    }
+}

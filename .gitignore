@@ -1,0 +1,11 @@
+/ServerPackages/
+sourcemap.json
+/DevPackages/
+/Packages/
+roblox.yml
+.DS_Store
+/*.rbxlx
+/*.rbxmx
+/*.rbxl
+/*.rbxm
+*.lock

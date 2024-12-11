@@ -1,0 +1,33 @@
+{
+    "className": "Workspace",
+    "properties": {
+        "Attributes": { "RbxLegacyAnimationBlending": { "Bool": true } },
+        "FallenPartsDestroyHeight": { "Float64": -125.0 },
+        "ReplicateInstanceDestroySetting": { "Enum": 2 },
+        "PlayerCharacterDestroyBehavior": { "Enum": 2 },
+        "TouchEventsUseCollisionGroups": { "Enum": 2 },
+        "PathfindingUseImprovedSearch": { "Enum": 2 },
+        "TouchesUseCollisionGroups": { "Bool": true },
+        "MeshPartHeadsAndAccessories": { "Enum": 2 },
+        "MoverConstraintRootBehavior": { "Enum": 2 },
+        "RenderingCacheOptimizations": { "Enum": 2 },
+        "IKControlConstraintSupport": { "Enum": 2 },
+        "AllowThirdPartySales": { "Bool": false },
+        "ClientAnimatorThrottling": { "Enum": 2 },
+        "RejectCharacterDeletions": { "Enum": 2 },
+        "CSGAsyncDynamicCollision": { "Enum": 2 },
+        "ModelStreamingBehavior": { "Enum": 2 },
+        "StreamingIntegrityMode": { "Enum": 2 },
+        "AvatarUnificationMode": { "Enum": 1 },
+        "SandboxedInstanceMode": { "Enum": 1 },
+        "PhysicsSteppingMethod": { "Enum": 2 },
+        "PrimalPhysicsSolver": { "Enum": 1 },
+        "StreamingEnabled": { "Bool": true },
+        "StreamOutBehavior": { "Enum": 2 },
+        "AirDensity": { "Float64": 0.0 },
+        "SignalBehavior": { "Enum": 2 },
+        "Gravity": { "Float64": 35.0 },
+        "Retargeting": { "Enum": 1 },
+        "FluidForces": { "Enum": 1 }
+    }
+}

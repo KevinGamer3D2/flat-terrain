@@ -1,0 +1,23 @@
+{
+    "className": "StarterPlayer",
+    "ignoreUnknownInstances": true,
+    "properties": {
+        "DevComputerCameraMovementMode": { "Enum": 1 },
+        "LoadCharacterLayeredClothing": { "Enum": 2 },
+        "HealthDisplayDistance": { "Float64": 64.0 },
+        "CameraMaxZoomDistance": { "Float64": 64.0 },
+        "DevTouchCameraMovementMode": { "Enum": 1 },
+        "CharacterJumpHeight": { "Float64": 2.713 },
+        "EnableMouseLockOption": { "Bool": false },
+        "AllowCustomAnimations": { "Bool": false },
+        "NameDisplayDistance": { "Float64": 64.0 },
+        "CharacterUseJumpPower": { "Bool": true },
+        "CharacterJumpPower": { "Float64": 13.0 },
+        "DevComputerMovementMode": { "Enum": 1 },
+        "LuaCharacterController": { "Enum": 1 },
+        "UserEmotesEnabled": { "Bool": false },
+        "DevTouchMovementMode": { "Enum": 6 },
+        "AvatarJointUpgrade": { "Enum": 1 },
+        "EnableDynamicHeads": { "Enum": 2 }
+    }
+}

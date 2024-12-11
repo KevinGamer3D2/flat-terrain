@@ -1,0 +1,153 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "args": [
+                "build",
+                "--color",
+                "always",
+                "--output",
+                "${input:output}",
+                "--watch",
+                "--verbose"
+            ],
+            "dependsOrder": "parallel",
+            "label": "rojo: build",
+            "isBackground": true,
+            "problemMatcher": [],
+            "command": "rojo",
+            "type": "shell"
+        },
+        {
+            "args": [
+                "sourcemap",
+                "--color",
+                "always",
+                "--include-non-scripts",
+                "--output",
+                "sourcemap.json",
+                "--watch",
+                "--verbose"
+            ],
+            "label": "rojo: sourcemap",
+            "problemMatcher": [],
+            "isBackground": true,
+            "command": "rojo",
+            "type": "shell"
+        },
+        {
+            "args": [
+                "(Test-Path",
+                "-Path",
+                "ServerPackages/)",
+                "{",
+                "wally-package-types",
+                "--sourcemap",
+                "sourcemap.json",
+                "ServerPackages/",
+                "}"
+            ],
+            "presentation": {
+                "reveal": "silent",
+                "close": true
+            },
+            "label": "wally-package-types: ServerPackages",
+            "problemMatcher": [],
+            "command": "if",
+            "type": "shell"
+        },
+        {
+            "args": [
+                "(Test-Path",
+                "-Path",
+                "DevPackages/)",
+                "{",
+                "wally-package-types",
+                "--sourcemap",
+                "sourcemap.json",
+                "DevPackages/",
+                "}"
+            ],
+            "presentation": {
+                "reveal": "silent",
+                "close": true
+            },
+            "label": "wally-package-types: DevPackages",
+            "problemMatcher": [],
+            "command": "if",
+            "type": "shell"
+        },
+        {
+            "args": [
+                "(Test-Path",
+                "-Path",
+                "Packages/)",
+                "{",
+                "wally-package-types",
+                "--sourcemap",
+                "sourcemap.json",
+                "Packages/",
+                "}"
+            ],
+            "presentation": {
+                "reveal": "silent",
+                "close": true
+            },
+            "label": "wally-package-types: Packages",
+            "problemMatcher": [],
+            "command": "if",
+            "type": "shell"
+        },
+        {
+            "dependsOn": [
+                "wally-package-types: ServerPackages",
+                "wally-package-types: DevPackages",
+                "wally-package-types: Packages"
+            ],
+            "presentation": {
+                "reveal": "silent",
+                "close": true
+            },
+            "label": "wally: export",
+            "problemMatcher": []
+        },
+        {
+            "presentation": {
+                "reveal": "silent",
+                "close": true
+            },
+            "label": "wally: install",
+            "problemMatcher": [],
+            "args": ["install"],
+            "command": "wally"
+        },
+        {
+            "presentation": {
+                "reveal": "silent",
+                "close": true
+            },
+            "dependsOn": ["wally: install", "wally: export"],
+            "dependsOrder": "sequence",
+            "label": "wally: build",
+            "problemMatcher": []
+        },
+        {
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": ["rojo: build", "rojo: sourcemap"],
+            "label": "rojo: watch",
+            "isBackground": true,
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "output",
+            "type": "promptString",
+            "default": "Place.rbxlx",
+            "description": "Where to output the result. Should end in .rbxm, .rbxl, .rbxmx, or .rbxlx."
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "className": "UIGradient",
+    "properties": {
+        "Enabled": { "Bool": false }
+    }
+}

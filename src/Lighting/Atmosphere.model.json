@@ -1,0 +1,9 @@
+{
+    "className": "Atmosphere",
+    "properties": {
+        "Color": { "Color3uint8": [199, 199, 199] },
+        "Decay": { "Color3uint8": [106, 112, 125] },
+        "Density": { "Float64": 0.3 },
+        "Offset": { "Float64": 0.25 }
+    }
+}

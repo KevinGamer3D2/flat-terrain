@@ -1,0 +1,18 @@
+{
+    "className": "ChatInputBarConfiguration",
+    "properties": {
+        "FontFace": {
+            "Font": {
+                "family": "rbxasset://fonts/families/SourceSansPro.json",
+                "weight": "Bold",
+                "style": "Normal"
+            }
+        },
+        "BackgroundTransparency": { "Float64": 0.6 },
+        "PlaceholderColor3": { "Color3": [0, 0, 0] },
+        "BackgroundColor3": { "Color3": [1, 1, 1] },
+        "TextStrokeTransparency": { "Float64": 1 },
+        "TextColor3": { "Color3": [0, 0, 0] },
+        "TextSize": { "Int64": 18 }
+    }
+}
