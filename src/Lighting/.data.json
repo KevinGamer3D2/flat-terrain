@@ -11,6 +11,6 @@
         "ClockTime": { "Float64": 14.5 },
         "Brightness": { "Float64": 3 },
         "LightingStyle": { "Enum": 1 },
-        "Technology": { "Enum": 1 }
+        "Technology": { "Enum": 3 }
     }
 }
