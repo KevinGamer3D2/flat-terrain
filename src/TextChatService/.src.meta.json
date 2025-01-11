@@ -1,6 +1,6 @@
 {
     "className": "TextChatService",
-    "ignoreUnknownInstances": true,
+    "keepUnknowns": true,
     "properties": {
         "ChatVersion": { "Enum": 1 }
     }

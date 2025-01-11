@@ -3,39 +3,6 @@
     "tasks": [
         {
             "args": [
-                "build",
-                "--color",
-                "always",
-                "--output",
-                "${input:output}.rbxlx",
-                "--watch",
-                "--verbose"
-            ],
-            "label": "rojo: build",
-            "isBackground": true,
-            "problemMatcher": [],
-            "command": "rojo",
-            "type": "shell"
-        },
-        {
-            "args": [
-                "sourcemap",
-                "--color",
-                "always",
-                "--include-non-scripts",
-                "--output",
-                "sourcemap.json",
-                "--watch",
-                "--verbose"
-            ],
-            "label": "rojo: sourcemap",
-            "problemMatcher": [],
-            "isBackground": true,
-            "command": "rojo",
-            "type": "shell"
-        },
-        {
-            "args": [
                 "(Test-Path",
                 "-Path",
                 "ServerPackages/)",
@@ -129,24 +96,6 @@
             "dependsOrder": "sequence",
             "label": "wally: build",
             "problemMatcher": []
-        },
-        {
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "dependsOn": ["rojo: build", "rojo: sourcemap"],
-            "label": "rojo: watch",
-            "isBackground": true,
-            "problemMatcher": []
-        }
-    ],
-    "inputs": [
-        {
-            "id": "output",
-            "default": "Place",
-            "type": "promptString",
-            "description": "Where to output the result."
         }
     ]
 }
