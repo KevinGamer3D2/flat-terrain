@@ -1,6 +1,6 @@
 {
     "className": "StarterPlayer",
-    "keepUnknowns": true,
+    "ignoreUnknownInstances": true,
     "properties": {
         "DevComputerCameraMovementMode": { "Enum": 1 },
         "LoadCharacterLayeredClothing": { "Enum": 2 },

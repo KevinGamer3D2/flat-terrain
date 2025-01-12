@@ -2,100 +2,39 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "rojo: build",
+            "isBackground": true,
+            "problemMatcher": [],
+            "command": "rojo",
             "args": [
-                "(Test-Path",
-                "-Path",
-                "ServerPackages/)",
-                "{",
-                "wally-package-types",
-                "--sourcemap",
-                "sourcemap.json",
-                "ServerPackages/",
-                "}"
-            ],
-            "presentation": {
-                "reveal": "silent",
-                "close": true
-            },
-            "label": "wally-package-types: ServerPackages",
-            "problemMatcher": [],
-            "command": "if",
-            "type": "shell"
+                "build",
+                "--color",
+                "always",
+                "--output",
+                "Flat Terrain.rbxlx",
+                "--verbose",
+                "--watch"
+            ]
         },
         {
+            "label": "rojo: sourcemap",
+            "isBackground": true,
+            "problemMatcher": [],
+            "command": "rojo",
             "args": [
-                "(Test-Path",
-                "-Path",
-                "DevPackages/)",
-                "{",
-                "wally-package-types",
-                "--sourcemap",
+                "sourcemap",
+                "--color",
+                "always",
+                "--output",
                 "sourcemap.json",
-                "DevPackages/",
-                "}"
-            ],
-            "presentation": {
-                "reveal": "silent",
-                "close": true
-            },
-            "label": "wally-package-types: DevPackages",
-            "problemMatcher": [],
-            "command": "if",
-            "type": "shell"
+                "--verbose",
+                "--watch"
+            ]
         },
         {
-            "args": [
-                "(Test-Path",
-                "-Path",
-                "Packages/)",
-                "{",
-                "wally-package-types",
-                "--sourcemap",
-                "sourcemap.json",
-                "Packages/",
-                "}"
-            ],
-            "presentation": {
-                "reveal": "silent",
-                "close": true
-            },
-            "label": "wally-package-types: Packages",
-            "problemMatcher": [],
-            "command": "if",
-            "type": "shell"
-        },
-        {
-            "dependsOn": [
-                "wally-package-types: ServerPackages",
-                "wally-package-types: DevPackages",
-                "wally-package-types: Packages"
-            ],
-            "presentation": {
-                "reveal": "silent",
-                "close": true
-            },
-            "label": "wally: export",
-            "problemMatcher": []
-        },
-        {
-            "presentation": {
-                "reveal": "silent",
-                "close": true
-            },
-            "label": "wally: install",
-            "problemMatcher": [],
-            "args": ["install"],
-            "command": "wally"
-        },
-        {
-            "presentation": {
-                "reveal": "silent",
-                "close": true
-            },
-            "dependsOn": ["wally: install", "wally: export"],
-            "dependsOrder": "sequence",
-            "label": "wally: build",
-            "problemMatcher": []
+            "label": "rojo: watch",
+            "group": { "kind": "build", "isDefault": true },
+            "dependsOn": ["rojo: build", "rojo: sourcemap"]
         }
     ]
 }

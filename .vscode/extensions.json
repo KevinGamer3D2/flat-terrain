@@ -7,7 +7,6 @@
         "esbenp.prettier-vscode",
         "JohnnyMorganz.luau-lsp",
         "filiptibell.roblox-ui",
-        "JohnnyMorganz.stylua",
-        "Dervex.argon"
+        "JohnnyMorganz.stylua"
     ]
 }

@@ -7,6 +7,7 @@
         "EnvironmentDiffuseScale": { "Float64": 1 },
         "Ambient": { "Color3uint8": [70, 70, 70] },
         "ColorShift_Top": { "Color3": [0, 0, 0] },
+        "ShadowSoftness": { "Float64": 0.2 },
         "GlobalShadows": { "Bool": true },
         "ClockTime": { "Float64": 14.5 },
         "Brightness": { "Float64": 3 },
