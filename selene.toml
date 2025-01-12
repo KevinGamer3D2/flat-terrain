@@ -1,2 +1,13 @@
+exclude = [
+    # pesde
+    "roblox_packages/*",
+    "lune_packages/*",
+    ".pesde/*",
+
+    # Wally
+    "ServerPackages/*",
+    "DevPackages/*",
+    "Packages/*",
+]
+
 std = "roblox+luau"
-exclude = ["ServerPackages/*", "DevPackages/*", "Packages/*"]
