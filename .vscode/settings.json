@@ -1,4 +1,6 @@
 {
+    "luau-lsp.completion.imports.ignoreGlobs": ["**/_Index/**", "**/.pesde/**"],
+    "luau-lsp.ignoreGlobs": ["**/_Index/**", "**/.pesde/**"],
     "luau-lsp.types.robloxSecurityLevel": "None",
     "roblox-ui.sourcemap.autogenerate": false,
     "luau-lsp.sourcemap.autogenerate": false,
