@@ -1,4 +1,5 @@
 {
+    "globIgnorePaths": ["**/.luaurc"],
     "name": "Flat Terrain",
     "tree": {
         "$ignoreUnknownInstances": true,
