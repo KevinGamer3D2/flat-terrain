@@ -25,6 +25,7 @@
                 "sourcemap",
                 "--color",
                 "always",
+                "--include-non-scripts",
                 "--output",
                 "sourcemap.json",
                 "--verbose",
