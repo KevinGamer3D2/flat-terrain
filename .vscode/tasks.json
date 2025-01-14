@@ -22,6 +22,7 @@
         {
             "icon": { "id": "eye-watch", "color": "terminal.ansiRed" },
             "dependsOn": ["rojo: build", "rojo: sourcemap"],
+            "group": { "kind": "build", "isDefault": true },
             "label": "rojo: watch",
             "problemMatcher": []
         }
