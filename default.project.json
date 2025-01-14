@@ -1,35 +1,5 @@
 {
-    "ignoreGlobs": ["**/.luaurc"],
     "name": "Flat Terrain",
-    "tree": {
-        "$className": "DataModel",
-
-        "Lighting": {
-            "$path": "src/Lighting"
-        },
-
-        "StarterPlayer": {
-            "$path": "src/StarterPlayer"
-        },
-
-        "TextChatService": {
-            "$path": "src/TextChatService"
-        },
-
-        "Workspace": {
-            "$path": "src/Workspace"
-        },
-
-        "MaterialService": {
-            "$path": "src/MaterialService.model.json"
-        },
-
-        "SoundService": {
-            "$path": "src/SoundService.model.json"
-        },
-
-        "StarterGui": {
-            "$path": "src/StarterGui.model.json"
-        }
-    }
+    "tree": { "$path": "src" },
+    "globIgnorePaths": ["**/.luaurc"]
 }

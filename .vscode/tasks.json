@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "args": ["build", "--output", "Flat Terrain.rbxlx", "--watch"],
+            "icon": { "id": "tools", "color": "terminal.ansiRed" },
+            "label": "rojo: build",
+            "problemMatcher": [],
+            "isBackground": true,
+            "command": "rojo",
+            "type": "shell"
+        },
+        {
+            "args": ["sourcemap", "--include-non-scripts", "--output", "sourcemap.json", "--watch"],
+            "icon": { "id": "map", "color": "terminal.ansiRed" },
+            "label": "rojo: sourcemap",
+            "problemMatcher": [],
+            "isBackground": true,
+            "command": "rojo",
+            "type": "shell"
+        },
+        {
+            "icon": { "id": "eye-watch", "color": "terminal.ansiRed" },
+            "dependsOn": ["rojo: build", "rojo: sourcemap"],
+            "label": "rojo: watch",
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,3 +1,3 @@
 [tools]
 pesde = "pesde-pkg/pesde@0.5.3+registry.0.1.2"
-argon = "argon-rbx/argon@2.0.21"
+rojo = "rojo-rbx/rojo@7.4.4"

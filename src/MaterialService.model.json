@@ -1,6 +1,4 @@
 {
-    "className": "MaterialService",
-    "properties": {
-        "Use2022Materials": { "Bool": true }
-    }
+    "properties": { "Use2022Materials": { "Bool": true } },
+    "className": "MaterialService"
 }
